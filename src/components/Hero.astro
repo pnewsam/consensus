@@ -1,0 +1,34 @@
+---
+import { buttonVariants } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+---
+
+<div
+  class="flex flex-col items-center justify-center gap-4 py-20 max-w-2xl mx-auto px-10"
+>
+  <h1 class="text-5xl font-bold">Consensus</h1>
+  <p class="text-xl">Astro + React Boilerplate</p>
+  <ul class="list-inside">
+    <li>✅ React</li>
+    <li>✅ TypeScript</li>
+    <li>✅ Tailwind CSS</li>
+    <li>✅ ESLint</li>
+    <li>✅ Prettier</li>
+    <li>
+      <a
+        class="text-blue-400 hover:text-blue-600"
+        href="https://ui.shadcn.com/docs/installation/astro">✅ Shadcn/UI</a
+      > (with Button and Input)
+    </li>
+    <li>✅ Lucide React</li>
+  </ul>
+  <div class="flex gap-4">
+    <a
+      href="https://github.com/pnewsam/consensus"
+      class:list={[buttonVariants({ variant: "outline" }), "gap-2"]}
+    >
+      View on GitHub
+      <ArrowRight className="h-4 w-4" />
+    </a>
+  </div>
+</div>
